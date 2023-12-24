@@ -25,10 +25,12 @@
         Lower {
             label = "Lower";
             bindings = <
+    &trans          &trans      &trans      &trans      &trans      &trans               &trans     &trans    &trans     &trans  &trans     &trans
     &trans          &kp K_PP    &kp UP      &kp N1      &kp N2      &kp N3               &kp N7     &kp N8    &kp N9     &kp N0  &kp HOME   &trans
     &trans          &kp LEFT    &kp DOWN    &kp RIGHT   &kp N4      &kp N5               &kp N4     &kp N5    &kp N6  &kp RIGHT    &trans  &kp F10
     &kp LEFT_ALT    &trans      &trans      &trans      &kp MINUS   &kp PLUS             &kp N1     &kp N2    &kp N3    &kp DOT    &trans   &trans
-                                            &kp LGUI    &trans      &kp SPACE           &kp RET  &kp RCTRL
+                                            &kp LGUI    &trans      &kp SPACE            &kp RET  &kp RCTRL
+                                                        &trans      &trans               &trans
             >;
             trackball-bindings = <&tmv_fine>;
         };
@@ -36,10 +38,12 @@
         Raise {
             label = "Raise";
             bindings = <
+    &trans  &trans          &trans      &trans      &trans          &trans            &trans      &trans    &trans           &trans    &trans      &trans        
     &trans  &kp EXCL        &kp AT      &kp HASH    &kp DLLR        &kp PRCNT         &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR    &kp DEL
-    &trans  &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0    &to 3             &kp UNDER  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+    &trans  &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0    &to 3             &kp UNDER   &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
     &trans  &out OUT_TOG    &trans      &trans      &trans          &trans            &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                        &kp LGUI    &kp LEFT_ALT    &kp SPACE           &kp RET     &trans
+                                        &kp LGUI    &kp LEFT_ALT    &kp SPACE         &kp RET     &trans
+                                                    &trans          &trans            &trans
             >;
             trackball-bindings = <&tsl_fine>;
         };
@@ -48,8 +52,10 @@
             bindings = <
    &trans  &trans  &trans     &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans     &trans
    &trans  &trans  &trans     &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans     &trans
+   &trans  &trans  &trans     &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans     &trans
 &mkp MCLK  &trans  &trans     &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &mkp LCLK
                            &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+                                      &trans     &trans    ss&trans
             >;
             trackball-bindings = <&tmv_fine>;
         };
